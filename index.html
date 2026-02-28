@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مداد بنفسجي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">مداد بنفسجي</div>
+    <div class="links">
+        <a href="#">الرئيسية</a>
+        <a href="#">المراجعات</a>
+        <a href="#">أضف مراجعة</a>
+        <button onclick="toggleMode()">🌙</button>
+    </div>
+</nav>
+<header>
+    <h1>مداد بنفسجي</h1>
+    <p>منصة اقتباسات ومراجعات الكتب</p>
+</header>
+
+<section class="hero reveal">
+    <h2>اقتباس اليوم</h2>
+    <p>"القراءة هي السفر الوحيد الذي لا يحتاج إلى جواز."</p>
+</section>
+
+<section class="reviews reveal">
+    <h2>المراجعات</h2>
+    <div id="reviewsContainer"></div>
+</section>
+
+<section class="add-review reveal">
+    <h2>أضف مراجعتك</h2>
+    <input type="text" id="bookName" placeholder="اسم الكتاب">
+    <textarea id="reviewText" placeholder="اكتب مراجعتك هنا..."></textarea>
+
+    <div class="stars">
+        <span onclick="setRating(1)">⭐</span>
+        <span onclick="setRating(2)">⭐</span>
+        <span onclick="setRating(3)">⭐</span>
+        <span onclick="setRating(4)">⭐</span>
+        <span onclick="setRating(5)">⭐</span>
+    </div>
+
+    <button onclick="addReview()">إضافة مراجعة</button>
+</section>
+
+<footer>
+    <p>تم تصميم هذا الموقع بواسطة عبدالرحمن أبو البراء</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #2E1A47, #663399);
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 45px;
+    color: #E6C7E6;
+}
+
+/* Hero */
+.hero {
+    margin: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+/* Reviews */
+.reviews {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.review-card {
+    background: #A3779D;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    background: #E6C7E6;
+    color: #2E1A47;
+}
+
+/* Add Review */
+.add-review {
+    text-align: center;
+    padding: 40px;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: none;
+}
+
+button {
+    background: #663399;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #E6C7E6;
+    color: #2E1A47;
+}
+
+.stars span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Scroll Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2E1A47;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #2E1A47;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #E6C7E6;
+}
+.light-mode {
+    background: #E6C7E6;
+    color: #2E1A47;
+}
+
+.light-mode nav {
+    background: #A3779D;
+}
+
+.light-mode footer {
+    background: #A3779D;
+}
